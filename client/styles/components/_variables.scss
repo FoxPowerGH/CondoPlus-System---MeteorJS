@@ -1,0 +1,36 @@
+// Core variables and mixins
+@import "{reywood:bootstrap3-sass}/assets/stylesheets/bootstrap/variables";
+@import "{reywood:bootstrap3-sass}/assets/stylesheets/bootstrap/mixins";
+
+//$pink-color: rgb(251, 216, 207);
+$pink-color: rgb(204, 221, 255);
+$pink-darken: darken($pink-color, 10%);
+$brand-primary: $pink-color;
+
+$link-color: $gray-darker;
+$link-hover-color: $pink-darken;
+$link-hover-decoration: none;
+
+$navbar-height: 50px;
+$font-family-base: "Letter Gothic Std", Menlo, Monaco, Consolas, "Courier New", monospace;
+
+$navbar-default-brand-color: white;
+//$navbar-default-brand-color: $navbar-default-link-color;
+$navbar-default-brand-hover-color: $pink-darken;
+
+//$navbar-default-color: $navbar-default-link-color;
+$navbar-default-color: white;
+$navbar-default-bg: #555555;
+$navbar-default-border: #444444;
+
+$navbar-default-link-color: darken(#fff, 90%);
+$navbar-default-link-active-color: $pink-darken;
+$navbar-default-link-active-bg: #555555;
+
+$nav-link-padding: 10px 25px;
+
+$dropdown-link-hover-bg: $pink-color;
+$dropdown-link-active-bg: $pink-color;
+$dropdown-link-active-color: $gray-darker;
+
+.navbar-default .navbar-nav > li > a { color: white;}

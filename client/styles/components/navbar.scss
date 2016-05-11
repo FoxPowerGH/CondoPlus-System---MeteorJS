@@ -1,0 +1,13 @@
+@import "{}/client/styles/components/_variables.scss";
+
+  @media (min-width: $grid-float-breakpoint) {
+    .navbar-col {
+      margin: 0 5%;
+    }
+  }
+
+
+  /* NavBar */
+  .navbar{
+      margin-bottom: 0;
+  }
