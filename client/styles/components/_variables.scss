@@ -23,7 +23,8 @@ $navbar-default-color: white;
 $navbar-default-bg: #555555;
 $navbar-default-border: #444444;
 
-$navbar-default-link-color: darken(#fff, 90%);
+//$navbar-default-link-color: darken(#fff, 90%);
+$navbar-default-link-color: white;
 $navbar-default-link-active-color: $pink-darken;
 $navbar-default-link-active-bg: #555555;
 
@@ -32,5 +33,3 @@ $nav-link-padding: 10px 25px;
 $dropdown-link-hover-bg: $pink-color;
 $dropdown-link-active-bg: $pink-color;
 $dropdown-link-active-color: $gray-darker;
-
-.navbar-default .navbar-nav > li > a { color: white;}

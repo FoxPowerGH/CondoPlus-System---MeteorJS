@@ -1,10 +1,45 @@
-<!-- bottom level template for the nav bar -->
 <template name="footer">
-	<nav class="navbar navbar-default navbar-fixed-bottom">
-    	<div class="container">
-      		<ul class="nav navbar-nav navbar-right">
-        		<li>Built with Meteor</li>
-      		</ul>
-    	</div>
-  	</nav>
+	<!-- Container (Footer) -->
+  <footer class="footer-section">
+    <div class="container-fluid">
+			<div class="row text-center social">
+        <a href="#home-section" title="To Top">
+          <span class="glyphicon glyphicon-chevron-up text-align"></span>
+        </a>
+        <br><br>
+				<div class="col-md-offset-2 col-md-8">
+          <!-- Container (Social Network) -->
+					<ul class="social-networks">
+            <!-- (Social Network - Twitter) -->
+						<li><a href="http://www.twitter.com" target="_blank">
+  						<span class="fa-stack fa-2x">
+  							<i class="fa fa-circle fa-stack-2x"></i>
+  							<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+  						</span></a>
+						</li>
+            <!-- (Social Network - Pinterest) -->
+						<li><a href="http://www.pinterest.com" target="_blank">
+  						<span class="fa-stack fa-2x">
+  							<i class="fa fa-circle fa-stack-2x"></i>
+  							<i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+  						</span></a>
+						</li>
+            <!-- (Social Network - Facebook) -->
+						<li><a href="http://www.facebook.com" target="_blank">
+  						<span class="fa-stack fa-2x">
+  							<i class="fa fa-circle fa-stack-2x"></i>
+  							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+  						</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+      <div class="row">
+				<div class="copyright text-center">
+					<p>Copyright© 2016 RW Consulting Group.   Built with MeteorJS & Orion</p>
+				</div>
+      </div>
+    </div>
+  </footer>
 </template>

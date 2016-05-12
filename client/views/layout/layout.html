@@ -1,15 +1,12 @@
-<body>
-  {{renderPage}}
-</body>
+
+<!--  {{renderPage}} -->
+
 
 <template name="layout">
-
+<body>
   {{> navbar }}
-
-  <div id="wrap-section">
-    {{> yield }}
-  </div>
-
+  {{> yield }}
   {{> footer }}
 
+</body>
 </template>
