@@ -1,14 +1,15 @@
 Categories = new orion.collection('categories', {
-  pluralName: 'categorías',
-  singularName: 'categoría',
-  title: 'Categorías',
+  pluralName: orion.helpers.getTranslation('categories.pluralName'),
+  singularName: orion.helpers.getTranslation('categories.singularName'),
+  title: orion.helpers.getTranslation('categories.title'),
   link: {
-    title: 'Categorías',
+    title: orion.helpers.getTranslation('categories.title'),
   },
   tabular: {
     columns: [
-      { data: 'index', title: 'Lugar' },
-      { data: 'name', title: 'Nombre' },
+      { data: "index", title: "Index" },
+      { data: 'name', title: orion.helpers.getTranslation('categories.schema.name') },
+      orion.attributeColumn('createdAt', 'createdAt', orion.helpers.getTranslation('categories.schema.createdAt'))
     ],
   },
 });
@@ -16,16 +17,16 @@ Categories = new orion.collection('categories', {
 Categories.attachSchema(new SimpleSchema({
   index: {
     type: Number,
-    label: 'Lugar',
+    label: orion.helpers.getTranslation('categories.schema.index'),
   },
   name: {
     type: String,
-    label: 'Nombre',
+    label: orion.helpers.getTranslation('categories.schema.name'),
   },
   url: {
     type: String,
-    label: 'URL',
+    label: orion.helpers.getTranslation('categories.schema.url'),
     unique: true,
   },
-  createdAt: orion.attribute('createdAt'),
+  createdAt: orion.attribute('createdAt')
 }));

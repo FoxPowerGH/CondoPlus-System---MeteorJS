@@ -1,11 +1,11 @@
-body {
+@import "{}/client/styles/components/_variables.scss";
 
+body {
+//  padding-top: 50px;
+//  padding-bottom: 10px;
+//  background-color: #f2f2f2;
 }
-/* +++++ WRAP SECTIONS +++++
+/* +++++ WRAP SECTIONS +++++*/
 
 #wrap-section {
-    padding-top: 50px;
-    padding-bottom: 10px;
-    background-color: #f2f2f2;
 }
-*/

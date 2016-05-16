@@ -1,0 +1,54 @@
+<template name="post">
+	<!-- Container (Post) -->
+  <div id="post-section" class="post-section">
+		<h1>Lastest Community News</h1>
+		{{# if Template.subscriptionsReady }}
+			{{# each posts }}
+				{{> homePost }}
+			{{ else }}
+				<h1>
+					No posts found
+				</h1>
+			{{/ each }}
+		{{ else }}
+			<p>
+				Loading...
+			</p>
+		{{/ if }}
+	</div>
+</template>
+
+<template name="homePost">
+	<hr>
+	<div class="home-post">
+<!--    <h3> ruta {{ getBulletinPath }} </h3>  -->
+		<h3>
+			<a href= {{ RouterLayerPathFor 'bulletin' }} style="color: #333">
+				{{ title }}
+			</a>
+		</h3>
+		{{# if image }}
+		<a href="{{ PathFor 'bulletin' }}">
+			<div class="image" style="background-image: url({{ image.url }})"></div>
+		</a>
+		{{/ if }}
+		<p>
+			by <b>{{ getCreator.profile.name }}</b>
+		</p>
+		<span>
+			{{# if currentUser }}
+			<a href="#" class="like-btn" style="{{# if likes currentUser._id }}color: #337ab7;{{ else }}color: #999;{{/ if }} margin-right: 7px; text-decoration: none">
+				<span style="margin-right: 3px;">{{ likesCount }}</span> <small><i class="fa fa-thumbs-up"></i></small>
+			</a>
+			{{ else }}
+				<a href="admin/login?ref=%2F">Login to like posts</a>
+				<span class="color: #999;">
+					<span style="margin-right: 3px;">{{ likesCount }}</span> <small><i class="fa fa-thumbs-up"></i></small>
+				</span>
+			{{/ if }}
+			<a href="#" class="flag-btn" style="color: #999">
+				<small><i class="fa fa-flag"></i></small>
+			</a>
+		</span>
+	</div>
+</template>

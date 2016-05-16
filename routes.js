@@ -4,9 +4,21 @@ RouterLayer.route('/', {
   layout: 'layout',
 });
 
-RouterLayer.route('/admin/my-account', {
-  name: 'account',
-  template: 'account',
+RouterLayer.route('/events', {
+  name: 'events',
+  template: 'events',
+  layout: 'layout',
+});
+
+RouterLayer.route('/bulletin', {
+  name: 'post',
+  template: 'post',
+  layout: 'layout',
+});
+
+RouterLayer.route('/bulletin/:postId?', {
+  name: 'posts.index',
+  template: 'postdetail',
   layout: 'layout',
 });
 
@@ -21,6 +33,13 @@ RouterLayer.route('/about', {
   template: 'about',
   layout: 'layout',
 });
+
+RouterLayer.route('/admin/my-account', {
+  name: 'account',
+  template: 'account',
+  layout: 'layout',
+});
+
 
 RouterLayer.route('/venta/:productId?', {
   name: 'products.index',

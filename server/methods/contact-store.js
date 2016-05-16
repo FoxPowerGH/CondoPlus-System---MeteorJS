@@ -36,9 +36,9 @@ Meteor.methods({
 
     Meteor.defer(function() {
       Email.send({
-        to: 'franciscainfantelorca@gmail.com',
-        from: 'Página Francisca Infante <franciscainfantelorca@gmail.com>',
-        subject: 'Contacto Francisca Infante',
+        to: 'info@phvecino.io',
+        from: 'Condo Plus System <info@phvecino.io>',
+        subject: 'Contact Condo Plus System',
         replyTo: doc.email,
         html: html,
       });
