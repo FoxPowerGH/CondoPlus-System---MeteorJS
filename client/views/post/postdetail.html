@@ -1,28 +1,31 @@
 <template name="postdetail">
-
-	{{# if Template.subscriptionsReady }}
-		{{# with post }}
-			<div id="post-detail" class="post-detail">
-				<h3>
-					{{ title }}
-					<small>by {{ getCreator.profile.name }}</small>
-				</h3>
-				{{# if image }}
-					<div class="image" style="background-image: url({{ image.url }})"></div>
-				{{/ if }}
-				<br>
-				<div class="content">
-					{{{ body }}}
+	<!-- Container (Post) -->
+  <div id="post-detail" class="post-detail">
+		<h1>Community News</h1>
+		{{# if Template.subscriptionsReady }}
+			{{# with post }}
+				<div id="post-detail" class="post-detail">
+					<h3>
+						{{ title }}
+						<small>by {{ getCreator.profile.name }}</small>
+					</h3>
+					{{# if image }}
+						<div class="image" style="background-image: url({{ image.url }})"></div>
+					{{/ if }}
+					<br>
+					<div id="content" class="content">
+						{{{ body }}}
+					</div>
 				</div>
-			</div>
+ 			{{ else }}
+				<h3>
+					Post Not found
+				</h3>
+			{{/ with }}
 		{{ else }}
-			<p>
-				Not found
-			</p>
-		{{/ with }}
-	{{ else }}
-		<p>
-			Loading...
-		</p>
-	{{/ if }}
+			<h3>
+				Loading...
+			</h3>
+		{{/ if }}
+	</div>
 </template>

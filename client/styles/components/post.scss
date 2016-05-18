@@ -19,24 +19,7 @@
     }
 }
 
-.post-detail {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  height: 700px;
-//  padding-top: 60px;
-//  padding-bottom: 100px;
-  margin-top: 55px;
-  margin-left: 50px;
-//  background-color: $brand-primary;
-  .content * {
-    font-family: "Letter Gothic Std", Menlo, Monaco, Consolas, "Courier New", monospace !important;
-  }
-  h3 {
-      font-size: 20px;
-      padding-bottom: 10px;
-    }
-}
+
 .card {
     position: relative;
     overflow: hidden;
@@ -44,4 +27,54 @@
     background-color: #fff;
     transition: box-shadow .25s;
     border-radius: 2px;
+}
+
+
+.post-detail {
+  margin-top: 65px;
+  width: 90%;
+  min-height: 350px;
+  margin-top: 55px;
+  margin-left: 50px;
+
+	.image {
+		border: 1px solid darken(#fff, 15%);
+		background-size: cover;
+		background-position: center;
+		min-height: 350px;
+		cursor: pointer;
+		background-color: darken(#fff, 5%);
+		border-radius: 5px;
+	}
+
+	.content * {
+    font-family: "Letter Gothic Std", Menlo, Monaco, Consolas, "Courier New", monospace !important;
+  }
+
+  h1 {
+      font-size: 32px;
+      padding-bottom: 5px;
+    }
+
+  h3 {
+      font-size: 26px;
+      padding-bottom: 5px;
+    }
+
+    p {
+        font-size: 12px;
+        padding-bottom: 5px;
+      }
+
+}
+
+.post-detail2 {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 700px;
+//  padding-top: 60px;
+//  padding-bottom: 100px;
+
+
 }

@@ -21,9 +21,8 @@
 <template name="homePost">
 	<hr>
 	<div class="home-post">
-<!--    <h3> ruta {{ getBulletinPath }} </h3>  -->
 		<h3>
-			<a href= {{ RouterLayerPathFor 'bulletin' }} style="color: #333">
+			<a href= "/bulletin/{{ this._id }}" style="color: #333">
 				{{ title }}
 			</a>
 		</h3>

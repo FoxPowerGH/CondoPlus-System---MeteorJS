@@ -17,7 +17,7 @@ RouterLayer.route('/bulletin', {
 });
 
 RouterLayer.route('/bulletin/:postId?', {
-  name: 'posts.index',
+  name: 'postsdetail',
   template: 'postdetail',
   layout: 'layout',
 });
