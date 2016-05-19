@@ -61,5 +61,22 @@ Template.addEditEventModal.events({
         closeModal();
       }
     });
+  },
+
+  'click .delete-event' ( event, template ) {
+    let eventModal = Session.get( 'eventModal' );
+    if ( confirm( 'Are you sure? This is permanent.' ) ) {
+      Meteor.call( 'removeEvent', eventModal.event, ( error ) => {
+        if ( error ) {
+          Bert.alert( error.reason, 'danger' );
+        } else {
+          Bert.alert( 'Event deleted!', 'success' );
+          closeModal();
+        }
+      });
+    }
   }
+
+
+
 });

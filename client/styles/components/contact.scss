@@ -4,10 +4,19 @@ $line-color: lighten(#000, 40%);
 $background-color: #fff;
 
 .contact {
+
+  .content * {
+    font-family: "Letter Gothic Std", Menlo, Monaco, Consolas, "Courier New", monospace !important;
+  }
+
   h3 {
     font-size: 20px;
     padding-bottom: 10px;
   }
+
+  .p {
+      font-size: 10px;
+    }
 
   .btn.btn-contact {
     background-color: $background-color;

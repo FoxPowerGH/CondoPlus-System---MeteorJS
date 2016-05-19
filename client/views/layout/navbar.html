@@ -14,9 +14,10 @@
           </div>
            <div class="collapse navbar-collapse" id="navigationbar">
              <ul class="nav navbar-nav navbar-right">
-               <li class="{{ RouterLayerIsActiveRoute 'bulletin' }}"><a href="{{ RouterLayerPathFor 'bulletin' }}"><i class="fa fa-bullhorn"></i> Announcements</a></li>
-               <li class="{{ RouterLayerIsActiveRoute 'events' }}"><a href="{{ RouterLayerPathFor 'events' }}"><i class="fa fa-calendar"></i> Events</a></li>
-               <li class="{{ RouterLayerIsActiveRoute 'incident' }}"><a href="{{ RouterLayerPathFor 'incident' }}"><i class="fa fa-wrench"></i> Incident</a></li>
+               {{# if currentUser }}
+                  <li class="{{ RouterLayerIsActiveRoute 'bulletin' }}"><a href="{{ RouterLayerPathFor 'bulletin' }}"><i class="fa fa-bullhorn"></i> Announcements</a></li>
+                  <li class="{{ RouterLayerIsActiveRoute 'events' }}"><a href="{{ RouterLayerPathFor 'events' }}"><i class="fa fa-calendar"></i> Events</a></li>
+<!--                 <li class="{{ RouterLayerIsActiveRoute 'incident' }}"><a href="{{ RouterLayerPathFor 'incident' }}"><i class="fa fa-wrench"></i> Incident</a></li>
                <li class="dropdown {{ RouterLayerIsActiveRoute 'work' }}">
                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Work <span class="caret"></span></a>
                  <ul class="dropdown-menu">
@@ -24,10 +25,9 @@
                     <li class="{{ RouterLayerIsActiveRoute 'work' url=url }}"><a href="{{ RouterLayerPathFor 'work' url=url }}">{{ name }}</a></li>
                    {{/ each }}
                  </ul>
-               </li>
-               <li class="{{ RouterLayerIsActiveRoute 'contact' }}"><a href="{{ RouterLayerPathFor 'contact' }}"><i class="fa fa-envelope"></i> Contact</a></li>
-               <li class="{{ RouterLayerIsActiveRoute 'about' }}"><a href="{{ RouterLayerPathFor 'about' }}"><i class="fa fa-question"></i> About</a></li>
-               {{# if currentUser }}
+               </li>-->
+                  <li class="{{ RouterLayerIsActiveRoute 'contact' }}"><a href="{{ RouterLayerPathFor 'contact' }}"><i class="fa fa-envelope"></i> Contact</a></li>
+                  <li class="{{ RouterLayerIsActiveRoute 'about' }}"><a href="{{ RouterLayerPathFor 'about' }}"><i class="fa fa-question"></i> About</a></li>
                   <li class="{{ RouterLayerIsActiveRoute 'account' }}"><a href="{{ RouterLayerPathFor 'account' }}"><i class="fa fa-lock"></i> Account</a></li>
                {{ else }}
                   <li class="{{ RouterLayerIsActiveRoute 'account' }}"><a href="admin/login?ref=%2F"><i class="fa fa-lock"></i> Login to Enjoy</a></li>

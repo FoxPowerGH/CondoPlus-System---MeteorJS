@@ -1,11 +1,11 @@
 @import "{}/client/styles/components/_variables.scss";
+@import "{reywood:bootstrap3-sass}/assets/stylesheets/bootstrap/variables";
 
 body {
+  .content * {
+    font-family: "Letter Gothic Std", Menlo, Monaco, Consolas, "Courier New", monospace !important;
+  }
 //  padding-top: 50px;
 //  padding-bottom: 10px;
 //  background-color: #f2f2f2;
-}
-/* +++++ WRAP SECTIONS +++++*/
-
-#wrap-section {
 }

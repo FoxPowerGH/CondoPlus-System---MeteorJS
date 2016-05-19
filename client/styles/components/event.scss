@@ -57,8 +57,12 @@
     margin: 0;
   }
 
-  p[class="type-Corporate"] {
+  p[class="type-Board Meeting"] {
     color: red;
+  }
+
+  p[class="type-BBQ Party"] {
+    color: orange;
   }
 
   p[class="type-Wedding"] {
